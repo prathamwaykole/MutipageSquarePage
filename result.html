@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Square Finder App</title>
+<link rel="stylesheet" href="mystyle.css" />
+</head>
+<body>
+<center>
+<div class="nav">
+<a href = "index.html">Home</a>
+<a href = "aboutus.html">Aboutus</a>
+</div>
+<h1>Result Page</h1>
+<h2 id="msg"/>
+<script>
+let msg = document.getElementById("msg");
+let res = localStorage.getItem("res");
+if(res !== null)
+msg.innerHTML = res;
+else
+msg.innerHTML = "Sorry u didnt enter Number";
+</script>
+</center>
+</body>
+</html>
